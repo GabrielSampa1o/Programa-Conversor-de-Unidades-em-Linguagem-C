@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "area.h" 
+#include "comprimento.h"
 
 int main() {
     int opcao;
@@ -11,36 +12,37 @@ int main() {
         scanf("%d", &opcao);
 
         switch (opcao) {
-            case 1: 
-                printf("Conversão de Comprimento ainda não implementada.\n");
+            case 1:
+                menu_comprimento(); // Chama o menu do comprimento
                 break;
-            case 2: 
+            case 2:
                 printf("Conversão de Massa ainda não implementada.\n");
                 break;
-            case 3: 
+            case 3:
                 printf("Conversão de Volume ainda não implementada.\n");
                 break;
-            case 4: 
+            case 4:
                 printf("Conversão de Temperatura ainda não implementada.\n");
                 break;
-            case 5: 
+            case 5:
                 printf("Conversão de Velocidade ainda não implementada.\n");
                 break;
-            case 6: 
+            case 6:
                 printf("Conversão de Potência ainda não implementada.\n");
                 break;
-            case 7: converter_area();
-                    break;
-            case 8: 
+            case 7:
+                converter_area(); // Chama a função para converter área
+                break;
+            case 8:
                 printf("Conversão de Tempo ainda não implementada.\n");
                 break;
-            case 9: 
+            case 9:
                 printf("Conversão de Dados ainda não implementada.\n");
                 break;
-            case 0: 
+            case 0:
                 printf("Saindo...\n");
                 break;
-            default: 
+            default:
                 printf("Opção inválida!\n");
         }
     } while (opcao != 0);
