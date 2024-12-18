@@ -66,7 +66,7 @@ Isso criará um executável chamado **`conversor`**.
 Caso prefira compilar manualmente, utilize o **GCC**:
 
 ```bash
-gcc main.c comprimento.c massa.c volume.c temperatura.c velocidade.c potencia.c area.c tempo.c dados.c -o conversor
+gcc main.c comprimento.c massa.c volume.c temperatura.c velocidade.c potencia.c area.c tempo.c dados.c -o output/conversor
 ```
 
 ---

@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "area.h" 
 
 int main() {
     int opcao;
@@ -11,17 +11,37 @@ int main() {
         scanf("%d", &opcao);
 
         switch (opcao) {
-            case 1:  break;
-            case 2:  break;
-            case 3:  break;
-            case 4:  break;
-            case 5:  break;
-            case 6:  break;
-            case 7:  break;
-            case 8:  break;
-            case 9:  break;
-            case 0: printf("Saindo...\n"); break;
-            default: printf("Opção inválida!\n");
+            case 1: 
+                printf("Conversão de Comprimento ainda não implementada.\n");
+                break;
+            case 2: 
+                printf("Conversão de Massa ainda não implementada.\n");
+                break;
+            case 3: 
+                printf("Conversão de Volume ainda não implementada.\n");
+                break;
+            case 4: 
+                printf("Conversão de Temperatura ainda não implementada.\n");
+                break;
+            case 5: 
+                printf("Conversão de Velocidade ainda não implementada.\n");
+                break;
+            case 6: 
+                printf("Conversão de Potência ainda não implementada.\n");
+                break;
+            case 7: converter_area();
+                    break;
+            case 8: 
+                printf("Conversão de Tempo ainda não implementada.\n");
+                break;
+            case 9: 
+                printf("Conversão de Dados ainda não implementada.\n");
+                break;
+            case 0: 
+                printf("Saindo...\n");
+                break;
+            default: 
+                printf("Opção inválida!\n");
         }
     } while (opcao != 0);
 
