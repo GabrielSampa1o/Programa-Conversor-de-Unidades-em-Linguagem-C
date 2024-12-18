@@ -31,7 +31,7 @@ void milimetros_para_metros(){
     printf("%.1f milímetros é igual a %.2lf metros.\n", milimetros, milimetros / 1000);
 }
 
-int main(){
+void menu_comprimento(){
         int opcao;
 
     do {
@@ -65,5 +65,4 @@ int main(){
     } while (opcao != 5);
 
 
-    return 0;
 }
