@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "comprimento.h"
 
 int main() {
     int opcao;
@@ -11,7 +11,9 @@ int main() {
         scanf("%d", &opcao);
 
         switch (opcao) {
-            case 1:  break;
+            case 1:
+                menu_comprimento(); //chama o menu comprimento.c 
+                break;
             case 2:  break;
             case 3:  break;
             case 4:  break;
