@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "area.h" 
 #include "comprimento.h"
+#include "velocidade.h"
 
 int main() {
     int opcao;
@@ -25,7 +26,7 @@ int main() {
                 printf("Conversão de Temperatura ainda não implementada.\n");
                 break;
             case 5:
-                printf("Conversão de Velocidade ainda não implementada.\n");
+               converter_velocidade();
                 break;
             case 6:
                 printf("Conversão de Potência ainda não implementada.\n");
