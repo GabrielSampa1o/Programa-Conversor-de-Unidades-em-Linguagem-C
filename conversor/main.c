@@ -2,6 +2,7 @@
 #include "area.h"
 #include "comprimento.h"
 #include "volume.h"
+#include "temperatura.h"
 
 int main()
 {
@@ -26,7 +27,7 @@ int main()
             converter_volume(); // Chama a função para converter volume
             break;
         case 4:
-            printf("Conversão de Temperatura ainda não implementada.\n");
+            converter_temperatura();
             break;
         case 5:
             printf("Conversão de Velocidade ainda não implementada.\n");
