@@ -2,6 +2,7 @@
 #include "area.h"
 #include "comprimento.h"
 #include "volume.h"
+#include "massa.h"
 
 int main()
 {
@@ -20,7 +21,7 @@ int main()
             menu_comprimento(); // Chama o menu do comprimento
             break;
         case 2:
-            printf("Conversão de Massa ainda não implementada.\n");
+            converterMassa(); // Chama a função para converter massa           
             break;
         case 3:
             converter_volume(); // Chama a função para converter volume
