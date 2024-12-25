@@ -4,6 +4,8 @@
 #include "velocidade.h"
 #include "volume.h"
 #include "temperatura.h"
+#include "potencia.h"
+
 
 int main()
 {
@@ -34,7 +36,7 @@ int main()
             converter_velocidade(); // Chama a função para converter velocidade
             break;
         case 6:
-            printf("Conversão de Potência ainda não implementada.\n");
+            converter_potencia(); //chama a funçao para converter
             break;
         case 7:
             converter_area(); // Chama a função para converter área
