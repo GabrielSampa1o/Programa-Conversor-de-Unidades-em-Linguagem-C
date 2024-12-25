@@ -3,6 +3,7 @@
 #include "comprimento.h"
 #include "velocidade.h"
 #include "volume.h"
+#include "massa.h"
 #include "temperatura.h"
 
 int main()
@@ -22,13 +23,13 @@ int main()
             menu_comprimento(); // Chama o menu do comprimento
             break;
         case 2:
-            printf("Conversão de Massa ainda não implementada.\n");
+            converterMassa(); // Chama a função para converter massa           
             break;
         case 3:
             converter_volume(); // Chama a função para converter volume
             break;
         case 4:
-            converter_temperatura();
+            converter_temperatura(); // Chama a função para converter temperatura
             break;
         case 5:
             converter_velocidade(); // Chama a função para converter velocidade
