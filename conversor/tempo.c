@@ -7,7 +7,7 @@ void converter_tempo() {
     double valor, resultado; // variaves dos valores
 
     // conversoes
-    printf("Selecione o método de conversão:\n");
+    printf("Selecione o método de conversao:\n");
     printf("1. Segundos para Minutos\n");
     printf("2. Minutos para Horas\n");
     printf("3. Horas para Segundos\n");
@@ -40,7 +40,7 @@ void converter_tempo() {
 
         default:
             // mensagem de erro caso a opcao nao seja valida
-            printf("Opção inválida!\n");
+            printf("Opcao invalida!\n");
             break;
     }
 }

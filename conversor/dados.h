@@ -2,7 +2,7 @@
 #define DADOS_H
 
 
-void converter_dados(unsigned long long valor, int origem, int destino);
+void converter_dados();
 
 
 #endif

@@ -1,7 +1,7 @@
 //declaracao de tempo
-#ifndef TEMPERATURA_H
-#define TEMPERATURA_H
+#ifndef TEMPO_H
+#define TEMPO_H
 
-void converter_temperatura();
+void converter_tempo();
 
 #endif

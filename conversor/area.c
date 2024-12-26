@@ -17,10 +17,10 @@ void converter_area() {
     double valor, resultado;
 
     // Exibe o menu de conversão de área
-    printf("\n--- Conversão de Área ---\n");
-    printf("1 - Metro quadrado para centímetro quadrado\n");
-    printf("2 - Centímetro quadrado para metro quadrado\n");
-    printf("Escolha uma opção: ");
+    printf("\n--- Conversao de Area ---\n");
+    printf("1 - Metro quadrado para centimetro quadrado\n");
+    printf("2 - Centimetro quadrado para metro quadrado\n");
+    printf("Escolha uma opcao: ");
     scanf("%d", &areaOpcao);
 
     if (areaOpcao == 1) {
@@ -29,11 +29,11 @@ void converter_area() {
         resultado = metroQuadradoParaCentimetroQuadrado(valor);
         printf("%.2lf m² = %.2lf cm²\n", valor, resultado);
     } else if (areaOpcao == 2) {
-        printf("Digite o valor em centímetros quadrados: ");
+        printf("Digite o valor em centimetros quadrados: ");
         scanf("%lf", &valor);
         resultado = centimetroQuadradoParaMetroQuadrado(valor);
         printf("%.2lf cm² = %.2lf m²\n", valor, resultado);
     } else {
-        printf("Opção inválida para conversão de área.\n");
+        printf("Opcao invalida para conversão de área.\n");
     }
 }

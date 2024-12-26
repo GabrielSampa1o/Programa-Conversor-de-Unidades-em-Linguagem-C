@@ -24,7 +24,7 @@ void converter_potencia() {
         } else if (strcmp(destino, "HP") == 0) {
             printf("%.3fW equivale a %.3fHP\n", valor, valor / 745.0);
         } else {
-            printf("Conversão inválida!\n");
+            printf("Conversao invalida!\n");
         }
     } else if (strcmp(unidade_origem, "kW") == 0) {
         if (strcmp(destino, "W") == 0) {
@@ -32,7 +32,7 @@ void converter_potencia() {
         } else if (strcmp(destino, "HP") == 0) {
             printf("%.3fkW equivale a %.3fHP\n", valor, valor / 0.745);
         } else {
-            printf("Conversão inválida!\n");
+            printf("Conversao invalida!\n");
         }
     } else if (strcmp(unidade_origem, "HP") == 0) {
         if (strcmp(destino, "W") == 0) {
@@ -40,9 +40,9 @@ void converter_potencia() {
         } else if (strcmp(destino, "kW") == 0) {
             printf("%.3fHP equivale a %.3fkW\n", valor, valor * 0.745);
         } else {
-            printf("Conversão inválida!\n");
+            printf("Conversao invalida!\n");
         }
     } else {
-        printf("Unidade de origem inválida!\n");
+        printf("Unidade de origem invalida!\n");
     }
 }

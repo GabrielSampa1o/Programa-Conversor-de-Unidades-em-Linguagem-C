@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 #include "area.h"
 #include "comprimento.h"
 #include "velocidade.h"
@@ -13,13 +14,14 @@
 
 int main()
 {
+    
     int opcao;
 
     do
     {
         printf("\n--- Conversor de Unidades ---\n");
-        printf("1. Comprimento\n2. Massa\n3. Volume\n4. Temperatura\n5. Velocidade\n6. Potência\n7. Área\n8. Tempo\n9. Dados\n0. Sair\n");
-        printf("Escolha uma opção: ");
+        printf("1. Comprimento\n2. Massa\n3. Volume\n4. Temperatura\n5. Velocidade\n6. Potencia\n7. Area\n8. Tempo\n9. Dados\n0. Sair\n");
+        printf("Escolha uma opcao: ");
         scanf("%d", &opcao);
 
         switch (opcao)
@@ -46,12 +48,9 @@ int main()
             converter_area(); // Chama a função para converter área
             break;
         case 8:
-            printf("Conversão de Tempo ainda não implementada.\n");
+            converter_tempo();  //Chama a função para converter tempo
             break;
         case 9:
-            printf("Conversão de Dados ainda não implementada.\n");
-            break;
-        case 10:
             converter_dados(); // Chama a função para converter dados
         case 0:
             printf("Saindo...\n");

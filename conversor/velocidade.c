@@ -5,14 +5,14 @@ void converter_velocidade() {
     double valor, resultado;
     int opcao;
 
-    printf("\n-----Escolha a conversão:-----\n");
+    printf("\n-----Escolha a conversao:-----\n");
     printf("1. km/h para m/s\n");
     printf("2. km/h para mph\n");
     printf("3. m/s para km/h\n");
     printf("4. m/s para mph\n");
     printf("5. mph para km/h\n");
     printf("6. mph para m/s\n");
-    printf("Opção: ");
+    printf("Opcao: ");
     scanf("%d", &opcao);
 
     printf("Digite o valor de velocidade: ");
@@ -44,7 +44,7 @@ void converter_velocidade() {
             printf("%.2lf mph = %.2lf m/s\n", valor, resultado);
             break;
         default:
-            printf("Opção inválida!\n");
+            printf("Opcaoo invalida!\n");
             break;
     }
 }

@@ -77,7 +77,7 @@ void converter_volume()
       resultado = valor;
     break;
   default:
-    printf("Opção invalida!\n");
+    printf("Opcao invalida!\n");
     return;
   }
 

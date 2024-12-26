@@ -1,42 +1,9 @@
 #include <stdio.h>
 #include "massa.h"
 
-void converterMassa(float valor, int unidadeOrigem, int unidadeDestino)
-{
-    float resultado;
-
-    //convertendo a unidade de origem para quilogramas
-    if(unidadeOrigem == 1){
-        //quilograma
-        resultado = valor;
-    }
-    else if(unidadeOrigem == 2){
-        //grama
-        resultado = valor/1000;
-    }
-    else if(unidadeOrigem == 3){
-        //tonelada
-        resultado = valor*1000;
-    }
-
-    //convertendo de quilogramas para a unidade de destino
-    if(unidadeDestino == 1){
-        //quilograma
-        printf("Resultado: %.2f Quilogramas \n", resultado);
-    }
-    else if(unidadeDestino == 2){
-        //grama
-        printf("Resultado: %.2f Gramas \n", resultado*1000);
-    }
-    else if(unidadeDestino == 3){
-        //tonelada
-        printf("Resultado: %.2f Toneladas \n", resultado/1000);
-    }
-}
-
-int main(){
+void converterMassa() {
     int unidadeOrigem, unidadeDestino;
-    float valor;
+    float valor, resultado;
 
     printf("Escolha a unidade de origem: \n");
     printf("1. Quilograma\n");
@@ -53,7 +20,32 @@ int main(){
     printf("Digite o valor a ser convertido: \n");
     scanf("%f", &valor);
 
-    converterMassa(valor, unidadeOrigem, unidadeDestino);
+    // Convertendo a unidade de origem para quilogramas
+    if (unidadeOrigem == 1) {
+        // Quilograma
+        resultado = valor;
+    } else if (unidadeOrigem == 2) {
+        // Grama
+        resultado = valor / 1000;
+    } else if (unidadeOrigem == 3) {
+        // Tonelada
+        resultado = valor * 1000;
+    } else {
+        printf("Unidade de origem invalida!\n");
+        return;
+    }
 
-return 0;
+    // Convertendo de quilogramas para a unidade de destino
+    if (unidadeDestino == 1) {
+        // Quilograma
+        printf("Resultado: %.2f Quilogramas\n", resultado);
+    } else if (unidadeDestino == 2) {
+        // Grama
+        printf("Resultado: %.2f Gramas\n", resultado * 1000);
+    } else if (unidadeDestino == 3) {
+        // Tonelada
+        printf("Resultado: %.2f Toneladas\n", resultado / 1000);
+    } else {
+        printf("Unidade de destino invalida!\n");
+    }
 }
