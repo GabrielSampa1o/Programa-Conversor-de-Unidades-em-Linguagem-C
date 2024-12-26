@@ -10,7 +10,7 @@ const char* unitNames[UNITS] = {"Bits", "Bytes", "Kilobytes", "Megabytes", "Giga
 const unsigned long long factors[UNITS] = {1, 8, 8 * 1024, 8 * 1024 * 1024, 8 * 1024 * 1024 * 1024, 8ULL * 1024 * 1024 * 1024 * 1024};
 
 // Função para calcular e exibir valores exatos
-void converterUnidadesExatas(unsigned long long valor, int origem, int destino) {
+void converter_dados(unsigned long long valor, int origem, int destino) {
     unsigned long long numerador = valor * factors[origem]; // Converte para Bits
     unsigned long long denominador = factors[destino];      // Fator da unidade de destino
 
@@ -44,7 +44,7 @@ int main() {
         return 1;
     }
 
-    converterUnidadesExatas(valor, origem, destino);
+    converter_dados(valor, origem, destino);
 
     return 0;
 }
