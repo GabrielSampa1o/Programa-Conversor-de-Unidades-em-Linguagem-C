@@ -6,7 +6,7 @@
 #include "massa.h"
 #include "temperatura.h"
 #include "potencia.h"
-#include "tempo.c"
+#include "tempo.h"
 
 
 int main()
