@@ -7,6 +7,8 @@
 #include "temperatura.h"
 #include "potencia.h"
 #include "tempo.h"
+#include "dados.h"
+
 
 
 int main()
@@ -49,6 +51,8 @@ int main()
         case 9:
             printf("Conversão de Dados ainda não implementada.\n");
             break;
+        case 10:
+            converter_dados(); // Chama a função para converter dados
         case 0:
             printf("Saindo...\n");
             break;
